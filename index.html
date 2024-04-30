@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+<body>
+<div>
+    <h1>Анкета пользователя</h1>
+    <form class="login_form" method="post">
+        <div class="alert alert-primary" role="alert">
+            <input placeholder="Введите никнейм" name="name">
+        </div>
+        <h4></h4>
+        <input placeholder="Введите год рождения" name="age">
+        <h4></h4>
+        <input placeholder="Введите адрес почты" name="email">
+        <h4></h4>
+        <h4></h4>
+        <div class="form-group">
+            <h3>Укажите свой пол</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="male" value="male" checked>
+                <label class="form-check-label" for="male">
+                    Мужской
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="female" value="female">
+                <label class="form-check-label" for="female">
+                    Женский
+                </label>
+            </div>
+        </div>
+        <div class="alert alert-primary" role="alert">
+            <h3>Какие жанры Вы предпочитаете? Выберите три жанра</h3>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="боевик">
+            <label>боевик</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="детектив">
+            <label>детектив</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="драма">
+            <label>драма</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="комедия">
+            <label>комедия</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="мелодрама">
+            <label>мелодрама</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="семейный фильм">
+            <label>семейный фильм</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="триллер">
+            <label>триллер</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="ужасы">
+            <label>ужасы</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="фантастика">
+            <label>фантастика</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="genres" value="приключение">
+            <label>приключение</label>
+        </div>
+        <h1></h1>
+        <button type="submit" class="btn btn-primary alert alert-primary" role="alert"
+                style="background-color: blue; color: white;">Продолжить
+        </button>
+    </form>
+</div>
+</body>
+</html>

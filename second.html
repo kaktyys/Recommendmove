@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox</title>
+
+</head>
+<body>
+<div>
+    <h1>Выберите несколько фильмов, которые Вы нравятся:</h1>
+    <form action="/result" method="post">
+        {% for i in user_image1 %}
+        <img src="{{ i }}" width="200" height="300">
+        {% endfor %}
+        <div>
+            {% for checkbox in checkboxes1 %}
+            <input type="checkbox" name="checkbox" value="{{ checkbox }}"> {{ checkbox }}<br>
+            {% endfor %}
+        </div>
+        {% for ii in user_image2 %}
+        <img src="{{ ii }}" width="200" height="300">
+        {% endfor %}
+        <div>
+        {% for checkboxx in checkboxes2 %}
+        <input type="checkbox" name="checkbox" value="{{ checkboxx }}"> {{ checkboxx }}<br>
+        {% endfor %}
+        </div>
+        <input type="submit" value="Далее">
+    </form>
+</div>
+</body>
+</html>
+
